@@ -1,0 +1,89 @@
+﻿namespace CustomListApp
+{
+    partial class Form1
+    {
+        /// <summary>
+        ///  Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        ///  Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            btnNewCustomer = new Button();
+            btnEditCustomer = new Button();
+            dgvCustomers = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvCustomers).BeginInit();
+            SuspendLayout();
+            // 
+            // btnNewCustomer
+            // 
+            btnNewCustomer.Location = new Point(1274, 31);
+            btnNewCustomer.Name = "btnNewCustomer";
+            btnNewCustomer.Size = new Size(191, 46);
+            btnNewCustomer.TabIndex = 0;
+            btnNewCustomer.Text = "New Customer";
+            btnNewCustomer.UseVisualStyleBackColor = true;
+            btnNewCustomer.Click += btnNewCustomer_Click;
+            // 
+            // btnEditCustomer
+            // 
+            btnEditCustomer.Enabled = false;
+            btnEditCustomer.Location = new Point(1077, 31);
+            btnEditCustomer.Name = "btnEditCustomer";
+            btnEditCustomer.Size = new Size(191, 46);
+            btnEditCustomer.TabIndex = 1;
+            btnEditCustomer.Text = "Edit Customer";
+            btnEditCustomer.UseVisualStyleBackColor = true;
+            btnEditCustomer.Click += btnEditCustomer_Click;
+            // 
+            // dgvCustomers
+            // 
+            dgvCustomers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvCustomers.Location = new Point(12, 95);
+            dgvCustomers.Name = "dgvCustomers";
+            dgvCustomers.RowHeadersWidth = 82;
+            dgvCustomers.Size = new Size(1468, 644);
+            dgvCustomers.TabIndex = 2;
+            dgvCustomers.SelectionChanged += dgvCustomers_SelectionChanged;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1492, 768);
+            Controls.Add(dgvCustomers);
+            Controls.Add(btnEditCustomer);
+            Controls.Add(btnNewCustomer);
+            Name = "Form1";
+            Text = "Customers";
+            Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvCustomers).EndInit();
+            ResumeLayout(false);
+        }
+
+        #endregion
+
+        private Button btnNewCustomer;
+        private Button btnEditCustomer;
+        private DataGridView dgvCustomers;
+    }
+}
